@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Container, Header, Content, Form, Item, Input, Label } from 'native-base';
+import { View, Text } from 'react-native';
+import { Item, Input, Label } from 'native-base';
 
 const SignUpScreen =()=>{
    return(
-       <View>
+       <View style={{padding: 10}}>
            <Item floatingLabel>
               <Label>Username</Label>
               <Input />
@@ -12,7 +12,8 @@ const SignUpScreen =()=>{
             <Item floatingLabel last>
               <Label>Password</Label>
               <Input />
-            </Item>
+            </Item> 
+
        </View>
    )
 }
