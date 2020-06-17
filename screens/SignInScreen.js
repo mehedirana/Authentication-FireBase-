@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, KeyboardAvoidingView, TouchableOpacity} from 'react-native';
-import { Item, Input, Label, Button, Header, Left, Icon, Body, Title, Right } from 'native-base';
+import { Text,View,  KeyboardAvoidingView, TouchableOpacity} from 'react-native';
+import { Item, Input, Label, Button, Header, Left,  Body, Title, Right} from 'native-base';
 
 const SignInScreen = ({ navigation }) =>{
     return (
@@ -9,7 +9,7 @@ const SignInScreen = ({ navigation }) =>{
             <Left>
             </Left>
             <Body>
-              <Title style={{ fontSize: 18, fontWeight:'bold'}}>Create Account</Title>
+              <Title>please log in</Title>
             </Body>
             <Right />
           </Header>
@@ -27,11 +27,13 @@ const SignInScreen = ({ navigation }) =>{
             </Item>
     
             <Button block  style={{ justifyContent: 'center',}}>
-              <Text style={{color:'white', fontWeight:'bold'}}>sign up</Text>
+              <Text style={{color:'white'}}>sign in</Text>
             </Button>
     
-            <TouchableOpacity>
-              <Text style={{textAlign:'center', padding:10, fontSize:15, fontWeight:'bold'}}>already have an account?</Text>
+            <TouchableOpacity
+            onPress={()=>{navigation.navigate("SignUpScreen")}}
+            >
+              <Text style={{textAlign:'center', padding:10,  fontWeight:'bold'}}>don't have an account?</Text>
             </TouchableOpacity>
     
           </View>
