@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { Item, Input, Label } from 'native-base';
+import { Item, Input, Label, Button } from 'native-base';
 
 const SignUpScreen =()=>{
    return(
@@ -12,7 +12,10 @@ const SignUpScreen =()=>{
             <Item floatingLabel last>
               <Label>Password</Label>
               <Input />
-            </Item> 
+            </Item>
+            <Button rounded>
+            <Text>Primary</Text>
+          </Button> 
 
        </View>
    )
