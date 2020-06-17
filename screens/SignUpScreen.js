@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, KeyboardAvoidingView, TouchableOpacity} from 'react-native';
 import { Item, Input, Label, Button, Header, Left, Icon, Body, Title, Right } from 'native-base';
 
-const SignUpScreen = () => {
+const SignUpScreen = ({ navigation }) => {
   return (
     <KeyboardAvoidingView >
       <Header span>
@@ -30,7 +30,9 @@ const SignUpScreen = () => {
           <Text style={{color:'white', fontWeight:'bold'}}>sign up</Text>
         </Button>
 
-        <TouchableOpacity>
+        <TouchableOpacity
+        onPress={()=>{navigation.navigate('SignInScreen')}}
+        >
           <Text style={{textAlign:'center', padding:10, fontSize:15, fontWeight:'bold'}}>already have an account?</Text>
         </TouchableOpacity>
 
