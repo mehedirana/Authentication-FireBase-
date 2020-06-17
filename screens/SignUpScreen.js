@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, KeyboardAvoidingView } from 'react-native';
+import { View, Text, KeyboardAvoidingView, TouchableOpacity} from 'react-native';
 import { Item, Input, Label, Button, Header, Left, Icon, Body, Title, Right } from 'native-base';
 
 const SignUpScreen = () => {
@@ -29,6 +29,10 @@ const SignUpScreen = () => {
         <Button block  style={{ justifyContent: 'center',}}>
           <Text style={{color:'white', fontWeight:'bold'}}>sign up</Text>
         </Button>
+
+        <TouchableOpacity>
+          <Text style={{textAlign:'center', padding:10, fontSize:15, fontWeight:'bold'}}>already have an account?</Text>
+        </TouchableOpacity>
 
       </View>
     </KeyboardAvoidingView>
