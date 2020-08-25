@@ -16,7 +16,7 @@ const SignInScreen = ({ navigation }) =>{
     
           <View style={{flexDirection:"column", padding:15}}>
     
-            <Item floatingLabel style={{borderBottomColor:'blue', padding:5}}>
+            {/* <Item floatingLabel style={{borderBottomColor:'blue', padding:5}}>
               <Label>Username</Label>
               <Input />
             </Item>
@@ -28,7 +28,7 @@ const SignInScreen = ({ navigation }) =>{
     
             <Button block  style={{ justifyContent: 'center',}}>
               <Text style={{color:'white'}}>sign in</Text>
-            </Button>
+            </Button> */}
     
             <TouchableOpacity
             onPress={()=>{navigation.navigate("SignUpScreen")}}
